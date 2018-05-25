@@ -1,0 +1,8 @@
+function [] = write_files(filename,data)
+%WRITE_FILES Summary of this function goes here
+%   Detailed explanation goes here
+fileID = fopen(filename,'a');
+fprintf(fileID,'%g ', data);
+fprintf(fileID, '\n');
+fclose(fileID);
+end
